@@ -1,0 +1,34 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: Calibri !important;
+} 
+.fc-widget-header {
+    background-color: #a2a2c7;
+    height: 60px !important;
+    }
+    .fc-button-group {
+        z-index: 1000;
+    }
+    .fc-button-primary {
+        color: black !important;
+        background-color: transparent !important;
+        border-color: transparent !important;
+    }
+
+    .fc-left div {
+        display: flex;
+        align-items: center;
+        place-content: center;
+      }
+      .fc-toolbar h2 {
+        font-size: 1.25em !important;
+        margin: 0;
+    }
+
+    .fc th, .fc td {
+        vertical-align: middle !important;
+    }
+    .fc th {
+        text-align: center;
+        color: white;
+    }

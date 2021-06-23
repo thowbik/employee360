@@ -1,0 +1,120 @@
+.flex-start {
+flex-direction: row;
+box-sizing: border-box;
+display: flex;
+place-content: center space-between;
+align-items: center; 
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    }
+    .text-bold {
+        font-weight: bold;
+        font-size: 34px;
+        color: #3D3D3D;
+    }
+    .row-flex {
+        display: flex;
+        flex-direction: row;
+    }
+    .card {
+        padding: 15px;
+        margin-bottom: 1.5rem;
+    }
+    .f-12 {
+        font-size: 11px;
+       color: #848484;
+       font-size: 14px;
+    }
+    .m-12 {
+        margin-right: 12px;
+        margin-bottom: 50px;
+    }
+    .app-header .navbar-toggler:hover .navbar-toggler-icon {
+        display: none !important;
+    }
+    .d-lg-block d-none navbar-toggler {
+        display: none !important;
+    }
+    .app-header .navbar-toggler {
+        min-width: 50px;
+        padding: 0.25rem 0;
+        display: none !important;
+    }
+    .pro-img  {
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+    }
+    .m-r-30 {
+        margin-right: 30px;
+    }
+    .flex {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .icon-img {
+        width: 57px;
+        height: 57px;
+    } 
+    .round {
+        width: 120px !important;
+        border-radius: 20px;
+        font-size: 12px;
+        background: white;
+        color: #F5821F !important;
+        border-color: #F5821F !important;
+        font-weight: bold;
+        font-size: 17px;
+    } 
+    .header {
+        margin-top: 40px;
+    }
+    .home-icon {
+        width: 20px;
+        height: 20px;
+    }
+    .text-center {
+        text-align: center;
+    }
+    .footer {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .m-b-10 {
+        margin-bottom: 10px;
+    }
+    .cust-dropdown {
+        width: 70px;
+        border: none;
+        color: #F5821F !important;
+        font-size: 17px !important;
+        font-weight: bold;
+    }
+    .flex-end {
+      display: flex;  
+      align-items: center;
+    }
+    .user {
+        color: #484848;
+        font-size: 18px;
+    }
+    .p-30 {
+        padding: 20px 30px !important;
+    } 
+    .footer-text {
+        color: #848484;
+        font-size: 14px;
+    }
+    @media (min-width: 768px)
+{
+    .customize {
+        max-width: 22%;
+}
+}
+
+   

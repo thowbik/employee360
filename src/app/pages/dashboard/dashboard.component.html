@@ -1,0 +1,230 @@
+<div class="flex">
+  <div class="header">
+     <div class="card">
+        <div class="row flex-start flex">
+           <div>
+              <img src="assets/img/logo.png" class="img-avatar" style="margin-right: 10px;" />
+              <img src="assets/img/home.jpg" class="home-icon" />
+           </div>
+           <div>
+              <span class="m-r-30 user">Welcome Pritha</span>
+              <img src="assets/img/profile.png" class="pro-img" />
+              <i class="fa fa-angle-down" style="font-size: 18px;
+                 margin-left: 10px;
+                 color: #484848;"></i>
+           </div>
+        </div>
+     </div>
+  </div>
+  <div class="row">
+     <div class="col-md-3 customize">
+        <div class="card p-30">
+           <span style="font-size: 20px;color: #3D3D3D;font-weight: bold;margin-bottom: 20px;">Report</span>
+           <div class="row-flex">
+              <div class="m-12">
+                 <img src="assets/img/icon1.png" class="icon-img">
+              </div>
+              <div class="column">
+                 <span class="text-bold">20</span>
+                 <span class="f-12">Target Mandays</span>
+              </div>
+           </div>
+           <div class="row-flex">
+              <div class="m-12">
+                 <img src="assets/img/icon2.png" class="icon-img">
+              </div>
+              <div class="column">
+                 <span class="text-bold">36</span>
+                 <span class="f-12">Planned Mandays</span>
+              </div>
+           </div>
+           <div class="row-flex">
+              <div class="m-12">
+                 <img src="assets/img/icon3.png" class="icon-img">
+              </div>
+              <div class="column">
+                 <span class="text-bold">21</span>
+                 <span class="f-12">Actual Mandays</span>
+              </div>
+           </div>
+           <div class="row-flex">
+              <div class="m-12">
+                 <img src="assets/img/icon4.png" class="icon-img">
+              </div>
+              <div class="column">
+                 <span class="text-bold">105%</span>
+                 <span class="f-12">Ach vs Target</span>
+              </div>
+           </div>
+        </div>
+        <div>
+           <img src="assets/img/learning.png" class="icon-img" style="width: 240px;">
+        </div>
+     </div>
+     <div class="col-md-9">
+        <div class="row">
+           <div class="col-md-6">
+              <div class="card">
+                 <div class="row col-md-12">
+                    <div class="col-md-9 row">
+                       <span style="font-weight: bold;font-size: 20px;margin-left: 15px;">MAP (Planner) for </span>
+                       <select name="select3" class="form-control form-control-sm cust-dropdown">
+                          <option *ngFor="let item of month" value="{{item.key}}">{{item.value}}</option>
+                       </select>
+                    </div>
+                    <div class="flex-end col-md-2">
+                       <button type="button" class="btn btn-primary round" (click)="goToCalender()"><i
+                          class="fa fa-plus-circle"></i>&nbsp;Add New</button>
+                       <i class="material-icons">&#xe5d4;</i>
+                    </div>
+                 </div>
+                 <table class="table table-responsive-sm table-hover table-outline mb-0">
+                    <thead class="thead-light">
+                       <tr>
+                          <th>Week</th>
+                          <th>Plan</th>
+                          <th>Achieved(₹)</th>
+                          <th>Achieved(%)</th>
+                       </tr>
+                    </thead>
+                    <tbody>
+                       <tr>
+                          <td>w 1</td>
+                          <td>10</td>
+                          <td>7</td>
+                          <td>70%</td>
+                       </tr>
+                       <tr>
+                          <td>w 2</td>
+                          <td>9</td>
+                          <td>-</td>
+                          <td>-</td>
+                       </tr>
+                       <tr>
+                          <td>w 3</td>
+                          <td>11</td>
+                          <td>-</td>
+                          <td>-</td>
+                       </tr>
+                       <tr>
+                          <td>w 4</td>
+                          <td>7</td>
+                          <td>-</td>
+                          <td>-</td>
+                       </tr>
+                       <tr>
+                          <td>w 5</td>
+                          <td>12</td>
+                          <td>-</td>
+                          <td>-</td>
+                       </tr>
+                    </tbody>
+                 </table>
+              </div>
+           </div>
+           <div class="col-md-6">
+              <div class="card">
+                 <span>Attendance</span>
+                 <table class="table table-responsive-sm table-hover table-outline mb-0">
+                    <thead class="thead-light">
+                       <tr>
+                          <th>Department</th>
+                          <th>Members</th>
+                          <th>Trained</th>
+                       </tr>
+                    </thead>
+                    <tbody>
+                       <tr>
+                          <td>Axis</td>
+                          <td>52</td>
+                          <td>20</td>
+                       </tr>
+                       <tr>
+                          <td>Bandhan</td>
+                          <td>45</td>
+                          <td>35</td>
+                       </tr>
+                       <tr>
+                          <td>BFL</td>
+                          <td>120</td>
+                          <td>80</td>
+                       </tr>
+                       <tr>
+                          <td>Emerging Banca</td>
+                          <td>80</td>
+                          <td>27</td>
+                       </tr>
+                       <tr>
+                          <td>Emerging Banca</td>
+                          <td>80</td>
+                          <td>27</td>
+                       </tr>
+                       <tr>
+                          <td>IPPB & Rural Banks</td>
+                          <td>55</td>
+                          <td>38</td>
+                       </tr>
+                       <tr>
+                          <td>Partnership Distribution</td>
+                          <td>40</td>
+                          <td>32</td>
+                       </tr>
+                    </tbody>
+                 </table>
+              </div>
+           </div>
+        </div>
+        <div class="card">
+           <div class="row">
+              <div class="col-md-4">
+                 <h5>Program Category wise Mondays</h5>
+                 <canvas id="myChart" style="display: block; height: 300px; width: 200px;"></canvas>
+              </div>
+              <div class="col-md-8">
+                 <div class="row flex-start m-b-10">
+                    <h5>Top 5 Programs for the Month</h5>
+                    <i class="material-icons" style="float: right;">&#xe5d4;</i>
+                 </div>
+                 <table class="table table-responsive-sm table-hover table-outline mb-0">
+                    <thead class="thead-light">
+                       <tr>
+                          <th>Programs</th>
+                          <th>Mandays</th>
+                       </tr>
+                    </thead>
+                    <tbody>
+                       <tr>
+                          <td>Coaching for Rookie</td>
+                          <td>10</td>
+                       </tr>
+                       <tr>
+                          <td>Product Refresher</td>
+                          <td>9</td>
+                       </tr>
+                       <tr>
+                          <td>POSP Connect</td>
+                          <td>8</td>
+                       </tr>
+                       <tr>
+                          <td>Partner Training</td>
+                          <td>7</td>
+                       </tr>
+                       <tr>
+                          <td>ASCEND</td>
+                          <td>6</td>
+                       </tr>
+                    </tbody>
+                 </table>
+              </div>
+           </div>
+        </div>
+     </div>
+     <div>
+     </div>
+  </div>
+</div>
+<div class="footer">
+  <div class="text-center">
+     <span class="footer-text">© 2021 bajajallianz.com.All rights reserved</span>
+  </div>
+</div>

@@ -1,0 +1,103 @@
+<div class="flex">
+  <div class="header">
+     <div class="card">
+        <div class="row flex-start flex">
+           <div>
+              <img src="assets/img/logo.png" class="img-avatar" style="margin-right: 10px;"/>
+              <img src="assets/img/home.jpg" class="home-icon"/>
+           </div>
+           <div>
+              <span class="m-r-30 user">Welcome Pritha</span>
+              <img src="assets/img/profile.png" class="pro-img"/>
+              <i class="fa fa-angle-down" style="font-size: 18px;
+                 margin-left: 10px;
+                 color: #484848;"></i>
+           </div>
+        </div>
+     </div>
+  </div>
+  <div class="top-layout">
+     <div class="row header-text">
+        <span style="text-align: center;">M.A.P</span>
+     </div>
+     <full-calendar
+     #fullcalendar
+     [plugins]="calendarPlugins" 
+     [editable]="true"
+     [events]="calendarEvents"
+     [defaultView]="'dayGridMonth'"
+     [header]="{
+     left: 'prev,title,next',
+     center: 'M.A.P',
+     right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
+     }"
+     [height]="'auto'"
+     [dir]="'ltr'"
+     [events]="calendarEvents"
+     (dateClick)="onDateClick($event)"
+     (eventClick)="onEventClick($event)" 
+     (eventRender)="onEventRender($event)">
+     </full-calendar>
+  </div>
+  <!-- <div>
+     <input class="form-input" #event type="text"  required>
+     <button type="button" class="btn btn-primary round" (click)="submit()">Submit</button>
+     </div> -->
+  <div class="form-popup" *ngIf="showPopup">
+     <h4 class="text-center title">Create New Map</h4>
+     <!-- <i class="fa fa-close"></i> -->
+     <div class="row col-lg-12">
+        <table>
+           <tr>
+              <td>
+                 <select name="select1" class="form-control form-control-sm cust-dropdown">
+                    <option  value="Channel 1">Channel 1</option>
+                    <option  value="Channel 2">Channel 2</option>
+                    <option  value="Channel 3">Channel 3</option>
+                    <option  value="Channel 4">Channel 4</option>
+                 </select>
+              </td>
+              <td>
+                 <select name="select2" class="form-control form-control-sm cust-dropdown">
+                    <option  value="Vertical 1">Vertical 1</option>
+                    <option  value="Vertical 2">Vertical 2</option>
+                    <option  value="Vertical 3">Vertical 3</option>
+                    <option  value="Vertical 4">Vertical 4</option>
+                 </select>
+              </td>
+              <td>
+                 <select name="select3" class="form-control form-control-sm cust-dropdown">
+                    <option  value="Admin Activities">Admin Activities</option>
+                    <option  value="ASCEND">ASCEND</option>
+                    <option  value="Coaching Days - Individual">Coaching Days - Individual</option>
+                    <option  value="POSP">POSP</option>
+                 </select>
+              </td>
+              <td>
+                 <select name="select4" class="form-control form-control-sm cust-dropdown">
+                    <option  value="Vertical 1">Internal Training Team Discussions</option>
+                    <option  value="Vertical 2">Travel</option>
+                    <option  value="Vertical 3">Content Discussions</option>
+                    <option  value="Vertical 4">Group Learning</option>
+                 </select>
+              </td>
+              <td>
+                 <select name="select5" class="form-control form-control-sm cust-dropdown">
+                    <option  value="Vertical 1">9:00am - 10:00am</option>
+                    <option  value="Vertical 2">9:30am</option>
+                    <option  value="Vertical 3">10:00am</option>
+                    <option  value="Vertical 4">11;00am</option>
+                 </select>
+              </td>
+           </tr>
+        </table>
+     </div>
+     <!-- <label for="email"><b>Event</b></label>
+        <input type="text" #event placeholder="Enter Event" name="email" required> -->
+     <div class="row col-lg-12 flex-center">
+        <div class="col-lg-2">
+           <button type="button" class="btn btn-primary round" (click)="submit()">Submit</button>
+        </div>
+     </div>
+  </div>
+</div>
